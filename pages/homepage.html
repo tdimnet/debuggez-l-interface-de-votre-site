@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Façadia - Vos capteurs de façace</title>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="home-page">
+        <div class="home-page-main-wrapper">
+            <header class="main-header">
+                <h1 class="main-header-title">
+                    <a href="/pages/homepage.html">Façadia</a>
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="/pages/homepage.html">Accueil</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="">Le projet</a>
+                    </li>
+                    <li class="main-nav-item pr">
+                        <a class="main-nav-link" href="/pages/add-sensor.html">Ajouter un capteur</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="/">Se Déconnecter</a>
+                    </li>
+                </ul>
+            </header>
+            <main class="home-page-main">
+                <div class="home-page-main-top-header">
+                    <h2 class="section-title">Vos capteurs</h2>
+                    <form class="dropdown-form" method="POST" action="#">
+                        <label for="sensor-status">Filter par status :</label>
+                        <select name="sensor-status" id="sensor-status">
+                            <option value="all">Tous</option>
+                            <option value="active">Actif</option>
+                            <option value="inactive">Inactif</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="sensors-wrapper">
+                </div>
+                <ul class="pagination-list">
+                </ul>
+            </main>
+        </div>
+    </div>
+    <script src="/js/pages/homepage.js"></script>
+</body>
+</html>

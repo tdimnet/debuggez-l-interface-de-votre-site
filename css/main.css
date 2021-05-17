@@ -1,0 +1,306 @@
+:root {
+    /* Descriptive color variables */
+    --japanese-laurel: #008000;
+    --mine-shaft: #333;
+    --persimmon: #FF6347;
+    --science-blue: #0B5ED7;
+    --silver: #C4C4C4;
+    --wild-sand: #F5F5F5;
+
+    /* Functional color variables */
+    --color-primary: var(--wild-sand);
+    --color-secondary: var(--mine-shaft);
+    --color-tertiary: var(--silver);
+
+    --button-bg-color: var(--science-blue);
+
+    --is-ok-color: var(--japanese-laurel);
+    --has-warning-color: var(--persimmon);
+}
+
+/* General Settings */
+body {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.pr {
+    margin-right: auto !important;
+}
+
+img {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.on {
+    color: var(--is-ok-color);
+}
+
+.off {
+    color: var(--has-warning-color);
+}
+
+/* Main Header */
+.main-header {
+    align-items: center;
+    background-color: var(--color-secondary);
+    display: flex;
+    height: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+.main-header-title {
+    margin-right: 40px;
+}
+
+.main-header-title a,
+.main-nav-link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.main-nav-link:hover {
+    text-decoration: underline;
+}
+
+.main-nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.main-nav-item {
+    margin-right: 24px;
+}
+
+/* Sign In Page */
+.sign-in-page {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.sign-in-main-wrapper {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 60px 40px 30px;
+}
+
+.main-title {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-title {
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 16px;
+    min-width: 300px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    border: none;
+    height: 39px;
+    padding-left: 8px;
+}
+
+.form-text-error {
+    color: var(--has-warning-color);
+    margin-top: 8px;
+}
+
+.submit-btn {
+    background-color: var(--button-bg-color);
+    border-radius: 8px;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-size: 16px;
+    height: 39px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+/* Home Page */
+.home-page-main {
+    width: 80%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.home-page-main-top-header {
+    display: flex;
+}
+
+.home-page-main-top-header .section-title {
+    margin-right: auto;
+}
+
+.sensors-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 16px;
+    grid-column-gap: 24px;
+    margin-bottom: 32px;
+}
+
+.sensor-card {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sensor-info {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+}
+
+.sensor-info-title {
+    margin-bottom: 8px;
+}
+
+.sensor-info-location,
+.sensor-info-status {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sensor-info-btn {
+    background-color: var(--button-bg-color);
+    border-radius: 8px;
+    color: var(--color-primary);
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pagination-list-item {
+    border: 1px solid var(--button-bg-color);
+}
+
+.pagination-list-item:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.pagination-list-item:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.pagination-list-item a {
+    align-items: center;
+    color: var(--button-bg-color);
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    text-decoration: none;
+    width: 33px;
+}
+
+
+/* Sensor Detail Page */
+.sensor-details-main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    width: 80%;
+}
+
+.sensor-details-wrapper {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 500px;
+    grid-column-gap: 40px;
+}
+
+.data-sensor-wrapper {
+    margin-bottom: 32px;
+}
+
+.sensor-details-img-gallery-wrapper img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sensor-details-info-wrapper {
+    background-color: var(--color-tertiary);
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: scroll;
+}
+
+.data-table {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--color-secondary);
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid var(--color-secondary);
+    padding: 8px;
+    text-align: center;
+}
+
+.data-table th:hover,
+.data-table td:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.weather-forecast-wrapper {
+    margin-bottom: 32px;
+}
+
+/* Add Sensor Page */
+.add-sensor-page-main {
+    width: 80%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}

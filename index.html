@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Façadia - Se connecter</title>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="sign-in-page">
+        <div class="sign-in-main-wrapper">
+            <h1 class="main-title">Façadia</h1>
+            <form class="sign-in-form" action="#" method="POST">
+                <h2 class="form-title">Veuillez vous connecter</h2>
+                
+                <div class="form-group">
+                    <label for="user-email">Votre addresse e-mail</label>
+                    <input name="user-email" id="user-email" type="email" placeholder="email@example.com">
+                    <span class="form-text-error hidden user-email-error-msg">L'e-mail n'est pas correct</span>
+                </div>
+                <div class="form-group">
+                    <label for="user-password">Votre mot de passe</label>
+                    <input name="user-password" id="user-password" type="password" placeholder="mot de passe">
+                    <span class="form-text-error hidden  user-password-error-msg">Le mot de passe n'est pas correct</span>
+                </div>
+                <div>
+                    <button class="submit-btn" type="submit">Se connecter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/pages/signIn.js"></script>
+</body>
+</html>

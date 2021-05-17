@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Façadia - Ajouter un capteur</title>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="add-sensor-page">
+        <div class="add-sensor-main-wrapper">
+            <header class="main-header">
+                <h1 class="main-header-title">
+                    <a href="/pages/homepage.html">Façadia</a>
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="/pages/homepage.html">Accueil</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="">Le projet</a>
+                    </li>
+                    <li class="main-nav-item pr">
+                        <a class="main-nav-link" href="/pages/add-sensor.html">Ajouter un capteur</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a class="main-nav-link" href="/">Se Déconnecter</a>
+                    </li>
+                </ul>
+            </header>
+            <main class="add-sensor-page-main">
+                <div class="add-sensor-page-page-main-top-header">
+                    <h2 class="section-title">Ajout d'un nouveau capteur</h2>
+                </div>
+                <form class="add-sensor-form" action="#" method="POST">
+                    <fieldset>
+                        <legend>Informations de base du capteur</legend>
+                        <div class="form-group">
+                            <label for="">ID du capteur</label>
+                            <input type="text" placeholder="123456">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Status du capteur</label>
+                            <select name="" id="">
+                                <option value="on">Actif</option>
+                                <option value="off">Inactif</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Marque du capteur</label>
+                            <input type="text" placeholder="facadiaRT">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Coordonnées géographiques du capteur</legend>
+                        <div class="form-group">
+                            <label for="">Lattitude du capteur</label>
+                            <input class="lat-input" type="text" placeholder="facadiaRT">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Longitude du capteur</label>
+                            <input class="lng-input" type="text" placeholder="facadiaRT">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Technicien rattaché</legend>
+                        <div class="form-group">
+                            <label for="">ID du technicen</label>
+                            <input type="text" placeholder="123456">
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button class="submit-btn" type="submit">Ajouter le capteur</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="/js/pages/addSensor.js"></script>
+</body>
+</html>
