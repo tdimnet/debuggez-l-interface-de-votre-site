@@ -35,7 +35,9 @@ const checkUserPasswordInput = () => {
 
 const isFormValid = () => checkUserEmailInput() && checkUserPasswordInput()
 
-$signInForm.addEventListener('submit', function(e) {
+// L'erreur en console
+// L'élément du DOM est mal sélectionné
+$sgnInForm.addEventListener('submit', function(e) {
     e.preventDefault()
 
     if (isFormValid()) {

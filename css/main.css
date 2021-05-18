@@ -99,8 +99,9 @@ img {
     min-width: 100vw;
 }
 
+/* L'erreur d'affichage */
 .sign-in-main-wrapper {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secndary); /* la variable n'existe pas */
     color: var(--color-primary);
     padding: 60px 40px 30px;
 }
