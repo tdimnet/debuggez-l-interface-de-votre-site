@@ -1,6 +1,6 @@
 const $addSensorForm = document.querySelector('.add-sensor-form')
 
-const $latInput = document.querySelector('.lat-input')
+const $latInput = document.querySelector('.lat-inpu')
 const $lngInput = document.querySelector('.lng-input')
 
 const checkSensorId = () => {}
@@ -32,7 +32,7 @@ const handleGeolocation = () => {
 }
 
 const main = () => {
-    // handleGeolocation()
+    handleGeolocation()
 
     $addSensorForm.addEventListener('submit', e => {
         e.preventDefault()
