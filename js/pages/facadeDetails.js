@@ -30,11 +30,6 @@ const retrieveSensorData = () => fetch('/data/facade-detail-data.json')
     .catch(err => console.log("Oh no", err))
 
 
-const retrieveWeatherForecastData = () => fetch('/data/weather-api-mocked-data.json')
-    .then(res => res.json())
-    .catch(err => console.log("Oh no", err))
-
-
 const fillSensorTable = sensorData => {
     $sensorId.textContent = sensorData.id
     $sensorBrand.textContent = sensorData.marque
@@ -73,7 +68,8 @@ const handleSensorImagesGallery = sensorData => {
 
 const main = async () => {
     const sensorData = await retrieveSensorData()
-    const weatherForecastData = await retrieveWeatherForecastData()
+
+    const weatherForecastData = await retrieveWeatherForecastData(sensorData.coordinates, true)
 
     fillSensorTable(sensorData)
     handleSensorImagesGallery(sensorData)
