@@ -151,6 +151,10 @@ img {
     width: 100%;
 }
 
+.sign-in-main-wrapper {
+    background-color: tomato;
+}
+
 /* Home Page */
 .home-page-main {
     width: 80%;
