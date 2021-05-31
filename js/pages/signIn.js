@@ -9,6 +9,10 @@ const $userPasswordErrorMsg = document.querySelector('.user-password-error-msg')
 const USER_EMAIL = "thomas@facadia.com"
 const USER_PASSWORD = "azerty"
 
+
+const $questionQuiz = document.querySelectorAll('#user-email')
+
+
 const checkUserEmailInput = () => {
     const isUserEmailValid = $userEmailInput.value.toLowerCase() === USER_EMAIL
 
