@@ -46,7 +46,7 @@ const fillSensorTable = sensorData => {
 const fillWeatherForecastTable = weatherForecastData => {
     $weatherLocation.textContent = weatherForecastData.location.name
     $weatherTemperature.textContent = `${weatherForecastData.current.temperature} °C`
-    
+
 }
 
 
@@ -78,3 +78,8 @@ const main = async () => {
 }
 
 main()
+
+const getSensorId = () => {
+    const $sensorTrueId = document.querySelector('sensor')
+    $sensorTrueId.style.display = "none"
+}
