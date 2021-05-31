@@ -99,7 +99,7 @@ const calculateOffset = () => {
         return 0
     }
 
-    return (Number(pageParams) - 1) * ITEMS_PER_PAGE
+    return (Number(pageParams) + 1) * ITEMS_PER_PAGE
 }
 
 // @TODO: Need to finish the function implementation
