@@ -32,7 +32,7 @@ const handleGeolocation = () => {
 }
 
 const main = () => {
-    // handleGeolocation()
+    handleGeolocation()
 
     $addSensorForm.addEventListener('submit', e => {
         e.preventDefault()
