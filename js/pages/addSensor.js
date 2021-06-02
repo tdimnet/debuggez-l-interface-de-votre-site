@@ -1,7 +1,7 @@
 const $addSensorForm = document.querySelector('.add-sensor-form')
 
-const $latInput = document.querySelector('.lat-inpu')
-const $lngInput = document.querySelector('.lng-input')
+const $latInput = document.querySelector('.lat-input')
+const $lngInput = document.querySelector('.lng-inpu')
 
 const checkSensorId = () => {}
 
