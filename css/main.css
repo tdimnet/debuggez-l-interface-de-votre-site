@@ -249,7 +249,7 @@ img {
     width: 80%;
 }
 
-#sensor-details-wrapper {
+.sensor-details-wrapper {
     display: grid;
     grid-template-columns: 400px auto;
     grid-template-rows: 500px;
@@ -310,6 +310,3 @@ img {
     margin-right: auto;
 }
 
-.sensor-details-wrapper {
-    display: flex;
-}
