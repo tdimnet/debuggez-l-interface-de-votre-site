@@ -297,6 +297,11 @@ img {
     margin-bottom: 32px;
 }
 
+.weather-icon {
+    height: 30px;
+    width: auto;
+}
+
 /* Add Sensor Page */
 .add-sensor-page-main {
     width: 80%;

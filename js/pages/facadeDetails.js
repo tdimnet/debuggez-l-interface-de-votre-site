@@ -11,8 +11,6 @@ const $sensorEngineerId = document.querySelector('.sensor-engineer-id')
 
 // Images Gallery
 const $sensorMainImg = document.querySelector('.sensor-details-img')
-const $prevItem = document.querySelector('.prev-item')
-const $nextItem = document.querySelector('.next-item')
 
 // Weather Forecast data table
 const $weatherLocation = document.querySelector('.weather-location')
@@ -46,23 +44,28 @@ const fillSensorTable = sensorData => {
 const fillWeatherForecastTable = weatherForecastData => {
     $weatherLocation.textContent = weatherForecastData.location.name
     $weatherTemperature.textContent = `${weatherForecastData.current.temperature} °C`
+
+    $weatherIcon.setAttribute('src', weatherForecastData.current.weather_icons[0])
+    $weatherIcon.setAttribute('alt', weatherForecastData.current.weather_descriptions[0])
+
+    $weatherDescription.textContent = weatherForecastData.current.weather_descriptions[0]
+
+    $weatherWind.textContent = `
+        ${weatherForecastData.current.wind_degree} ${weatherForecastData.current.wind_dir}
+        (${weatherForecastData.current.wind_speed} km/h)
+    `
+
+    $weatherCloudcover.textContent = weatherForecastData.current.cloudcover
     
+    $weatherUVIndex.textContent = weatherForecastData.current.uv_index
+    $weatherIsDay.textContent = weatherForecastData.current.is_day === 'yes' ? 'Jour' : 'Nuit'
+
 }
 
 
 const handleSensorImagesGallery = sensorData => {
     // By default take the first element of the array
     $sensorMainImg.setAttribute('src', `/assets/${sensorData.medias[0]}`)
-
-    $prevItem.addEventListener('click', e => {
-        e.preventDefault()
-        console.log('prev')
-    })
-    
-    $nextItem.addEventListener('click', e => {
-        e.preventDefault()
-        console.log('next')
-    })
 }
 
 
