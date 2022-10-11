@@ -10,9 +10,9 @@ const _retrieveWeatherForecastApiData = coordinates => fetch(`http://api.weather
     .catch(err => console.log("Oh no", err))
 
 
-const retrieveWeatherForecastData = async (coordinates, isMocked) => {
+const retrieveWeatherForecastData = (coordinates, isMocked) => {
     if (isMocked) {
-        return await _retrieveWeatherForecastMockedData()
+        return _retrieveWeatherForecastMockedData()
     }
-    return await _retrieveWeatherForecastApiData(coordinates)
+    return _retrieveWeatherForecastApiData(coordinates)
 }
